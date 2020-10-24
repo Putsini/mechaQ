@@ -12,36 +12,44 @@
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
+    padding: 5px;
     text-align: center;
-    background: white;
+    background: #123;
+    color: white;
   }
   
   .header h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
   
-  /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
+  /*Barra navegacion*/
+  .BarraLinks{
+    display: grid;
+    grid-template-columns: repeat(var(--items), 1fr);
+    color: #123;
+    background: white;
+    width: 100%;
+    height: 60px;
+    margin: 0 0;
+    
   }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
+
+.BarraLinks a{
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
+    background: white;
+    height: 60px;
+    float: left;
+    padding: 0.75em;
+    margin: 0 4px 10%;
     color: black;
-  }
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.BarraLinks a:hover{
+    background: rgba(85, 98, 170, 0.541);
+}
   
   /* Create two unequal columns that floats next to each other */
   /* Left column */
@@ -143,7 +151,7 @@
     h1{
         color: white;
   }
-  
+
   button{
     font-family: Calibri;
     font-size: 26px;
@@ -172,25 +180,8 @@
     text-shadow: white 0px 0px 10px ;
   }
 
-  .BarraLinks{
-      color: black;
-      background: white;
-      width: 100%;
-      height: 80px;
-      margin: 10px 0px;
-  }
-
-  .BarraLinks a{
-      display: block;
-      background: rgb(175, 175, 175);
-      float: left;
-      padding: 5px;
-      margin-left: 4px;
-      color: black;
-      text-decoration: none;
-      text-align: center;
-  }
-
-  .BarraLinks a:hover{
-      background: rgb(107, 107, 107);
+  .InfoDiv{
+    background: #123;
+    padding: 0;
+    margin: 0 0;
   }
